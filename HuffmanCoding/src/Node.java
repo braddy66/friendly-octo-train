@@ -1,6 +1,5 @@
 public class Node<T> implements Comparable<Node<T>> {
-    Node<T> left;
-    Node<T> right;
+    Node<T> left, right;
     T val; // character 
     int weight;
     Node (T val, int weight){
@@ -16,6 +15,5 @@ public class Node<T> implements Comparable<Node<T>> {
     @Override
     public String toString() {
         return (val != null) ? val+"" : weight+"";
-        // return weight+"";
     }  
 }

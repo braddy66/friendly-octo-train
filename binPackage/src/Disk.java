@@ -8,7 +8,7 @@ public class Disk implements Comparable<Disk> {
     public Disk(int index,int file){
         size = 0;
         files = new ArrayList<Integer>();
-        this.index = index;
+        this.indx = index;
         add(file);
     }
     public int compareTo(Disk other){

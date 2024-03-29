@@ -29,36 +29,44 @@ public class plantHeight {
 				pw.println(Arrays.toString(ordGrowth));
 				long minDays = 0;
 				long maxDays = Long.MAX_VALUE; //restriction if needed
+				long days = 0;
 				for(int x = 0; x < plants-1;x++){
-					if(ordHeight[x] == ordHeight[x+1] && ordGrowth[x] == ordGrowth[x+1]){
-						minDays = -1;
-						break;
-					}
-					long days = (long) Math.ceil(Math.abs((ordHeight[x]+ordHeight[x+1]+1)/(ordGrowth[x]+ordGrowth[x+1])));
-					if(ordHeight[x] < ordHeight[x+1]){
-						if(ordGrowth[x] <= ordGrowth[x+1]) continue; //always smaller
-						else maxDays = Math.min(maxDays, days);
-					}
-					else if(ordHeight[x] > ordHeight[x+1]){ // earlier plant is bigger
-						if(ordGrowth[x] >= ordGrowth[x+1]){// invalid (always bigger cause parralel)
+					if(ordHeight[x] == ordHeight[x+1]){
+						if(ordGrowth[x] < ordGrowth[x+1]) days = 1;
+						else{
 							minDays = -1;
 							break;
 						}
-						else  minDays = Math.max(minDays, days);
 					}
+					else{ 
+						days = (long)Math.ceil(Math.abs((ordHeight[x]+ordHeight[x+1]+1)/(ordGrowth[x]+ordGrowth[x+1])));
+						if(ordHeight[x] < ordHeight[x+1]){
+							if(ordGrowth[x] <= ordHeight[x+1]) days = 0;
+							maxDays = Math.min(maxDays, days); // restrict to not mess up order
+						}
+						else{  // earlier plant is bigger
+							if(ordGrowth[x] >= ordGrowth[x+1]){// invalid (always bigger cause parralel)
+									minDays = -1;
+									break;
+							}
+								else  minDays = Math.max(minDays, days);
+							}
+						}
+					
 					if(minDays >= maxDays){
-						System.out.println(maxDays);
-						minDays = -1;
-						break;
+							System.out.println(maxDays);
+							minDays = -1;
+							break;
 					}	
+				
 				}
 				pw.println(minDays);
 			} 
 		}
-		/*
-		 * Make sure to include the line below, as it
-		 * flushes and closes the output stream.
-		 */
-		pw.close();
-	}
+/*
+ * Make sure to include the line below, as it
+ * flushes and closes the output stream.
+ */
+pw.close();
+}
 }

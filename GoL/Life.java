@@ -131,7 +131,7 @@ class Life extends JFrame implements ActionListener
 	
 	public static void main(String[] args) throws IOException
 	{
-		Life conway = new Life("glgun13.lif"); //parameterize to start w/ a particular file
+		Life conway = new Life("blinker.lif"); //parameterize to start w/ a particular file
 		
 		conway.addWindowListener(new WindowAdapter()
 		{

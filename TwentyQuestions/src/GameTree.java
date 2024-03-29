@@ -39,7 +39,7 @@ public class GameTree
 	}
 
 	Node buildTree(Scanner sc) {
-		String val = sc.nextLine().trim();
+		String val = sc.nextLine().trim();	
 		Node node = new Node(val);
 		if (val.charAt(val.length() - 1) == '?') { // question
 			node.yes = buildTree(sc); // yes node
@@ -122,7 +122,7 @@ public class GameTree
 	}
 	public String toString(Node node, String literal)
 	{
-		if (node == null) return ""; 
+		if (node == null) return "" ; 
 		return toString(node.no, literal + "- ") + literal + node.val + "\n" + toString(node.yes, literal + "- ");
 	}
 
