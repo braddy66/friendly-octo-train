@@ -7,9 +7,10 @@ public class PictureTester
     	//construct a Picture object from a jpg image on disk
         Picture swan = new Picture("waterlilies.jpg"); 
         //beach.verticalFlip();
-        //beach.edgeDetection(25);
+        // beach.edgeDetection(25);
         //beach.view(); //calling the view() bmethod displays the picture with the PictureViewer GUI
-        swan.blurcircle(4).view();
+        swan.blurcircle(4 ).view();
+        testSteganography();
         //PUT YOUR TESTS HERE
     
         

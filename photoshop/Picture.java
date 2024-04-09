@@ -412,11 +412,6 @@ public class Picture {
                 if(other[x][y].colorDistance(Color.BLACK) < 50){
                     pixels[x][y].setRed(pixels[x][y].getRed()+1);
                 }
-        
-
-            
-
-        
 
     }
 

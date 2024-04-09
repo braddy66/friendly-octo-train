@@ -9,9 +9,9 @@
  */
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
+
 
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
@@ -167,31 +167,32 @@ public class MyHashTableTester
 	 * This test may take some time to run, uncomment if you want to check the performance
 	 * of your hash table.  Note that it will require an extra method be written to work
 	 */
-//	@Test
-//	public void test15_testRuntimeComparedToList() {
-//		System.out.println("RUNNING BIG-O TESTS");
-//		
-//		final int size = 1_000_000;
-//		
-//		for (int i = 0; i < size; i++) {
-//			table.put(new Person("" + i), i);
-//		}
-//
-//		double start = System.currentTimeMillis();
-//		
-//		table.get(new Person("" + size/2));
-//		
-//		System.out.println("table lookup: " + (System.currentTimeMillis() - start) + "ms");
-//		
-//		List<Person> list = new ArrayList<>(size);
-//		
-//	    //you will need to implement the keySet method (similar to java.util.HashMap)
-//		list.addAll(table.keySet()); //keySet should return a Set<K>, where K is a Person in this case
-//
-//		start = System.currentTimeMillis();
-//		
-//		list.contains(new Person("" + size/2));
-//		
-//		System.out.println("list contains: " + (System.currentTimeMillis() - start) + "ms");
-//	}
+// 	@Test
+// 	public void test15_testRuntimeComparedToList() {
+// 		System.out.println("RUNNING BIG-O TESTS");
+		
+// 		final int size = 1_000_000;
+		
+// 		for (int i = 0; i < size; i++) {
+// 			table.put(new Person("" + i), i);
+// 		}
+
+// 		double start = System.currentTimeMillis();
+		
+// 		table.get(new Person("" + size/2));
+		
+// 		System.out.println("table lookup: " + (System.currentTimeMillis() - start) + "ms");
+		
+// 		List<Person> list = new ArrayList<>(size);
+		
+// 	    //you will need to implement the keySet method (similar to java.util.HashMap)
+// 		list.addAll(table.keySet()); //keySet should return a Set<K>, where K is a Person in this case
+
+// 		start = System.currentTimeMillis();
+		
+// 		list.contains(new Person("" + size/2));
+		
+// 		System.out.println("list contains: " + (System.currentTimeMillis() - start) + "ms");
+// }
 }
+

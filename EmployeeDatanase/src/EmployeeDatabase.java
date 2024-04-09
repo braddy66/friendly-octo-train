@@ -20,7 +20,6 @@ class EmployeeDatabase{
     boolean putLinear(Employee value){
         if(vals == arr.length) return false;
         int i = hash(value.ID);
-
         if(arr[i] == null){
             vals++;
             arr[i] = new Entry(value.ID, value);
@@ -42,8 +41,8 @@ class EmployeeDatabase{
     }
     Employee getLinear(int key){
         int i = hash(key);
-        collision++;
         if(arr[i] != null &&arr[i].ID == key) return arr[i].employee;
+        collision++;
         for(int ind = i+1; i != ind;i++){ 
             if(ind == arr.length) ind%=arr.length;
             if(arr[ind] != null && arr[ind].ID == key)
@@ -62,7 +61,6 @@ class EmployeeDatabase{
             arr[i] = new Entry(value.ID, value);
             return true;
         }
-        int counter = 0;
         collision++;
         for(int m = 1; m <= arr.length;m++){  
             int ind = Math.abs((i+m*m)%arr.length);
@@ -70,9 +68,6 @@ class EmployeeDatabase{
                 arr[ind] = new Entry(value.getId(), value);
                 return true;
             }
-           
-            counter++;
-            if(counter == arr.length) break;
         }
         return false;
     }
