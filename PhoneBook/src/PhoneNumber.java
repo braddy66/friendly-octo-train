@@ -3,7 +3,4 @@ public class PhoneNumber {
     PhoneNumber(String number){
         this.number = number;
     }
-    public int hashCode(){
-        return number.hashCode();
-    }
 }

@@ -1,12 +1,9 @@
-import java.util.Collection;
-
-@SuppressWarnings({"unchecked", "hiding"})
+@SuppressWarnings({"unchecked", "hiding", "rawtypes"})
 public class MyHashTable<Key, Value> {
    
     private class Entry<Key, Value> {
         Key key;
         Value val;
-        @SuppressWarnings("rawtypes")
         Entry next;
         Entry(Key key, Value val){
             this.key = key;
@@ -33,7 +30,6 @@ public class MyHashTable<Key, Value> {
             }
             if(curr.next== null) break;
             curr = curr.next;
-
         }
         size++;
         curr.next = new Entry<Key, Value>(key, val);
@@ -73,9 +69,5 @@ public class MyHashTable<Key, Value> {
     Entry<Key, Value> get(int i){
         final Entry<Key, Value> e = (Entry<Key, Value>) table[i];
         return e;
-    }
-    public Collection<? extends Person> keySet() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'keySet'");
     }
 }
