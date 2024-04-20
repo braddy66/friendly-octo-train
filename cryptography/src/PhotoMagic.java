@@ -25,16 +25,6 @@ public class PhotoMagic {
         PhotoMagic.transform(pic, new LFSR(alphanumericKey, tap));
         pic.save(s+".jpg");
         pic.show();
-        // String s = "mystery";
-        // int tap = 58;
-        // Picture p = new Picture(s+".png");
-        // p.show();
-        // String alphanumericKey = convertAlphaNumeric("OPENSESAME");
-        // System.out.println(alphanumericKey);
-        // PhotoMagic.transform(p, new LFSR(alphanumericKey, tap));
-        // p.save("phaseOne"+s+".png");
-        // Picture p2 = new Picture("phaseOne"+s+".png");
-        // p2.show();
     }
     static String convertAlphaNumeric(String word){
         String alpha = "";
