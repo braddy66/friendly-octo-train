@@ -17,7 +17,7 @@ public class LFSR
   
     /** simulate one step and return the new bit as 0 or 1 */
     int step(){
-        int ans = reg[0]^reg[N-tap-1];
+        int ans = reg[0]^reg[N-tap-1]; //XOR on bits to make new int
         for(int i = 0; i < N-1;i++) reg[i] = reg[i+1];
         reg[N-1] = ans;
         return ans;
