@@ -15,10 +15,6 @@ public class Scooby {
         public String toString(){
             return c+"";
         }
-        boolean equals(Object o){
-           Node n = (Node) o;
-           return c == n.c;
-        }
     }
     public static void main(String[] args) throws Exception {
         File f = new File("scooby.dat");
