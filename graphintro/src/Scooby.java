@@ -40,8 +40,8 @@ public class Scooby {
             Node end = hm.get(s.charAt(1));
             visited = new HashSet<>();
             visited.add(start); 
-            if( start == null || end == null ||!path(start, end)) 
-            System.out.println("no");
+            if(start == null || end == null ||!path(start, end)) System.out.println("no");
+            
             else System.out.println("yes");
         }
     }
@@ -50,9 +50,8 @@ public class Scooby {
         ArrayList<Node> al = x.al;
         visited.add(x);
         for(int i = al.size()-1; i > -1;i--){
-            if(!visited.contains(al.get(i)) && path(al.get(i), y)){
-                return true; 
-            }
+            if(!visited.contains(al.get(i)) && path(al.get(i), y)) return true;
+            
         }
         return false;
     }
