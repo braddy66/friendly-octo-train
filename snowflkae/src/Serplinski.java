@@ -30,7 +30,7 @@ class SerplinskiPanel extends JPanel
 		if(size < 10){
 			g.drawLine(x,y,x-size,y);
 			g.drawLine(x,y,x,y-size);
-			g.drawLine(x,y-size,x-size, y);			
+			g.drawLine(x,y-size,x-size, y); // last triangle			
 			return;
 		}
 		g.drawLine(x,y,x-size,y);

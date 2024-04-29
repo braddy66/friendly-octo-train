@@ -17,8 +17,7 @@ public class Scooby {
         }
     }
     public static void main(String[] args) throws Exception {
-        File f = new File("scooby.dat");
-        Scanner sc = new Scanner(f);
+        Scanner sc = new Scanner(new File("scooby.dat"));
         int N = sc.nextInt();
         sc.nextLine();
         while(N-- > 0){
@@ -40,8 +39,9 @@ public class Scooby {
             Node end = hm.get(s.charAt(1));
             visited = new HashSet<>();
             visited.add(start); 
-            if(start == null || end == null ||!path(start, end)) System.out.println("no");
-            
+            if(start == null || end == null ||!path(start, end)){ 
+                System.out.println("no");
+            }
             else System.out.println("yes");
         }
     }
@@ -51,7 +51,6 @@ public class Scooby {
         visited.add(x);
         for(int i = al.size()-1; i > -1;i--){
             if(!visited.contains(al.get(i)) && path(al.get(i), y)) return true;
-            
         }
         return false;
     }
