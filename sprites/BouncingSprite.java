@@ -37,7 +37,7 @@ public class BouncingSprite extends MobileSprite {
         super.step(world);
         for(int x = 0; x < world.getNumSprites();x++){
             if(this.overlaps(world.getSprite(x)) && world.getSprite(x)!=this){
-                System.out.println("hello");
+                // System.out.println("hello");
                 newbounce(this);
                 newbounce(world.getSprite(x));
 

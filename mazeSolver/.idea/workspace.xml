@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ed50626a-ea90-4192-b5a3-c3ad6816fd89" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Lab 8/src/QueueADT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuitarHero/src/GuitarHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GuitarHero/src/GuitarHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuitarHero/src/GuitarString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GuitarHero/src/GuitarString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuitarHero/src/RingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GuitarHero/src/RingBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shopping/Shopping/src/Runner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shopping/Shopping/src/ShoppingFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shopping/Shopping/src/ShoppingMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shopping/Shopping/src/WelcomeBack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shopping/src/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Shopping/src/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shopping/src/WelcomeBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Shopping/src/WelcomeBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordLadder/src/WordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../wordLadder/src/WordLadder.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2UobZs2lzpIJpBHijIkqTCyHbn4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Circles",
+    "last_opened_file_path": "C:/Users/shrey/OneDrive/Documents/GitHub/java-repo/mazeSolver"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed50626a-ea90-4192-b5a3-c3ad6816fd89" name="Changes" comment="" />
+      <created>1693608940178</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693608940178</updated>
+    </task>
+    <servers />
+  </component>
+</project>

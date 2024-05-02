@@ -412,11 +412,6 @@ public class Picture {
                 if(other[x][y].colorDistance(Color.BLACK) < 50){
                     pixels[x][y].setRed(pixels[x][y].getRed()+1);
                 }
-        
-
-            
-
-        
 
     }
 
@@ -502,8 +497,6 @@ public class Picture {
         
         for(int r = 0; r < pixels.length;r++)
             for(int c = 0; c < pixels[0].length;c++){
-                
-                    
                     int red = 0; 
                     int blue = 0;
                     int green = 0;
@@ -520,20 +513,11 @@ public class Picture {
                               count++;
                             }
                         }
-
-
-                
                 newPic.getPixels()[r][c].setRed((int)((double)red/count));
                 newPic.getPixels()[r][c].setBlue((int)((double)blue/count));
                 newPic.getPixels()[r][c].setGreen((int)((double)green/count));
-                //System.out.println(other[r][c].getRed());
-                        }
-            
-            
-                
-        
-
-        return newPic; //REPLACbreak;E
+                    }
+        return newPic; 
     }
     
     /**
@@ -541,32 +525,32 @@ public class Picture {
      * @param dist the "radius" of the neighboring pixels to use
      * @return a new Picture with the glass filter applied
      */
-    // public Picture glassFilter(int dist) 
-    // {
-    //     Picture newPic = new Picture(pixels.length, pixels[0].length);
-    //     for(int x = 0; x < pixels.length;x++){
-    //         for(int y = 0; y < pixels[x].length;y++){
-    //             int r = (int)Math.random()+dist-1;
-    //             int b = (int)Math.random();
-    //             int rx = 0;
-    //             int ry = 0;
-    //             if(b == 0)
-    //                 while(x+rx > pixels.length ||  y+ry > pixels[0].length){ 
-    //                  rx = (int)Math.random()+dist-1;
-    //                  ry = (int)Math.random()+dist-1;
-    //              }
+    public Picture glassFilter(int dist) 
+    {
+        Picture newPic = new Picture(pixels.length, pixels[0].length);
+        for(int x = 0; x < pixels.length;x++){
+            for(int y = 0; y < pixels[x].length;y++){
+                int r = (int)Math.random()+dist-1;
+                int b = (int)Math.random();
+                int rx = 0;
+                int ry = 0;
+                if(b == 0)
+                    while(x+rx > pixels.length ||  y+ry > pixels[0].length){ 
+                     rx = (int)Math.random()+dist-1;
+                     ry = (int)Math.random()+dist-1;
+                 }
              
                  
-    //             else
-    //                 while(x+ry < 0 ||y+ry < 0){
-    //                  rx = (int)Math.random()-dist+1;
-    //                  ry = (int)Math.random()-dist+1;
-    //              }
-    //             newPic.getPixels()[x][y].setColor(pixels[x+rx][y+ry].getRed(), pixels[x+rx][y+ry].getGreen(), pixels[x+rx][y+ry].getBlue());
+                else
+                    while(x+ry < 0 ||y+ry < 0){
+                     rx = (int)Math.random()-dist+1;
+                     ry = (int)Math.random()-dist+1;
+                 }
+                newPic.getPixels()[x][y].setColor(pixels[x+rx][y+ry].getRed(), pixels[x+rx][y+ry].getGreen(), pixels[x+rx][y+ry].getBlue());
 
 
 
-    //         }
+            }
         }
         
         return newPic; //REPLACE

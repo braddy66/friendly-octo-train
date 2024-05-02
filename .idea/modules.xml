@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AnimalHouse/AnimalHouse.iml" filepath="$PROJECT_DIR$/AnimalHouse/AnimalHouse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Discardo/Discardo.iml" filepath="$PROJECT_DIR$/Discardo/Discardo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Shopping/Shopping.iml" filepath="$PROJECT_DIR$/Shopping/Shopping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-repo.iml" filepath="$PROJECT_DIR$/java-repo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mazeSolver/mazeSolver.iml" filepath="$PROJECT_DIR$/mazeSolver/mazeSolver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping 2/shopping 2.iml" filepath="$PROJECT_DIR$/shopping 2/shopping 2.iml" />
+    </modules>
+  </component>
+</project>
